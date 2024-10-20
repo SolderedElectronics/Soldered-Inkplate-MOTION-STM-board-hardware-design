@@ -1,0 +1,5 @@
+(version 1)
+#Ignore board edge clearance for connector (castelated edges hles)
+(rule allow_connector_OnEdge
+    (constraint edge_clearance (min -1mm))
+    (condition "A.insideCourtyard('K*')"))
